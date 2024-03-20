@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>menu bar</title>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="pass">
+            <nav id="menu">
+                <a href="">HOME</a>
+                <a href="">BUY</a>
+                <a href="">SELL</a>
+                <a href="">SERVICE</a>
+                <a href="">ABOUT</a>
+            </nav>
+            <div id="unix">
+                <img src="list.png" alt="menu">
+            </div>
+        </div>
+        <script>
+        const unix =document.getElementById('unix');
+        const menu=document.getElementById('menu');
+        unix.addEventListener("click",()=>{
+            unix.classList.toggle("active");
+            menu.classList.toggle("active");
+        })
+        </script>
+    </body>
+</html>
